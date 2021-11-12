@@ -367,3 +367,134 @@ ansible-playbook httpd_webnodes.yml
 sudo vi httpd_webnodes.yml
 ansible-playbook httpd_webnodes.yml
 
+sudo yum install git -y
+ls -la
+which docker
+yum install docker -y
+yum install docker -y -b
+sudo yum install docker -y
+which docker
+docker --version
+sudo yum remove docker -y
+docker --version
+hostname -i
+r
+ls -la
+cat tomcat_paybook.yml.yml
+vi sudo httpd_webnodes.yml
+sudo vi  httpd_webnodes.yml
+which git
+git --version
+ls -la
+
+ansible-vault decrypt webpage.yml
+ansible-vault encrypted webpage.yml
+ansible-vault encrypt webpage.yml
+sudo ansible-vault encrypt webpage.yml
+vi webpage.yml
+sudo vi webpage.yml
+sudo ansible-vault encrypt tomcat_paybook.yml.yml
+sudo vi tomcat_paybook.yml.yml
+sudo ansibe-vault decrypt tomcat_paybook.yml.yml
+ansibe-vault decrypt tomcat_paybook.yml.yml
+ansible-vault create sai.yml
+vi sai.yml
+ansible-vault view sai.yml
+ansible-vault decrypt sai.yml
+sudo vi sai.yml 
+ansible-galaxy init saikrishna
+ansible-galaxy init play_roles
+ls -la
+cd play_roles/
+ls -la
+yum insatll tree -y
+yum insatall tree -y
+yum insatall tree -y -b
+ls -la
+rm  -rf defaults
+rm -rf  README.md templates .travis.yml 
+ls -la
+rm -rf meta 
+ls
+cd tasks/
+ls
+vi main.yml
+cd ..
+ls -la
+cd tasks/
+vi main.yml 
+cd ..
+ls
+cd handlers/
+vi main.yml 
+cd ..
+ls -la
+vi playbook_roles.yml
+ansible-playbook playbook_roles.yml
+vi playbook_roles.yml
+ansible-playbook playbook_roles.yml
+ansible-playbook playbook_roles.yml --check
+cd play_roles/
+ls
+vi tasks/main.yml 
+ansible-playbook playbook_roles.yml --check
+cd ..
+ls
+cd
+ls
+ansible-playbook playbook_roles.yml 
+vi playbook_roles.yml
+ansible-playbook playbook_roles.yml 
+ansible all --list-host
+ansible webservers[0] -m yum -a "name=docker state=installed" -b
+ansible all -a "sudo yum remove docker -y"
+ansible webservers -m yum -a "name=docker stste=present" -b
+ansible webservers -m yum -a "name=docker state=present" -b
+git init
+ls -la
+git config --global user.name "saikrishna"
+git config --global user.email "mechanical3222@gamil.com"
+git config --global --list
+git add .
+sudo git add .
+git commit -m "my playbooks"
+sudo git commit -m "my playbooks"
+git remote add origin https://github.com/sai3222/my-playbooks.git
+git branch -M main
+git remote add origin https://github.com/sai3222/my-playbooks.git
+git branch -M main
+sudo git remote add origin https://github.com/sai3222/my-playbooks.git
+git branch -M main
+git remote -v
+git remote remove origin
+git remote -v
+git remote add origin https://github.com/sai3222/my-playbooks.git
+git branch -M main
+sudo git remote add origin https://github.com/sai3222/my-playbooks.git
+git remote -v
+git branch -m main
+sudo git branch -m main
+sudo git push origin main
+git remote -v
+git push origin main
+git push -u origin main
+ls -la
+ansible-playbook playbook_roles.yml
+ansible webservers[0] -a "yum remove docker -y" -b
+ansible webservers[0] -m yum -a "name=docker state=installed" -b
+ansible webservers[0] -a "which docker" -b
+ansible-playbook playbook_roles.yml
+ls -la
+git ststus
+git status
+git log --oneline
+git show 10df1f3
+git push origin main
+sudo git push origin main
+git remote -v
+git remote remove origin
+git remote -v
+git push https://github.com/sai3222/sai11.git
+git push origin main https://github.com/sai3222/sai11.githttps://github.com/sai3222/sai11.git
+lllgit push origin main https://github.com/sai3222/sai11.git
+ls -la
