@@ -1,0 +1,7 @@
+---
+- name: roles playbook
+  hosts: webservers
+  become: true
+  
+  roles:
+  - play_roles         

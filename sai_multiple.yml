@@ -1,0 +1,29 @@
+---
+- name: creating a file
+  hosts: all
+  become: true
+ 
+  tasks:
+  - name: instaling httpd package
+    yum:
+      name: httpd
+      state: installed
+    notify: service httpd start
+  
+  handlers:  
+  - name: service httpd start
+    service:
+      name: httpd
+      state: started       
+
+  - name: create a file
+    file:
+      name: saikrishna
+      state: touch 
+  
+  - name: copy index.html file
+    copy:
+      src: /home/ansadmin/index.html
+      dest: /var/www/html
+      mode: 0666
+

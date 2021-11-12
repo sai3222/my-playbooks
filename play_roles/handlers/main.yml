@@ -1,0 +1,6 @@
+---
+# handlers file for play_roles
+- name: service docker start
+  service:
+    name: docker
+    state: started    

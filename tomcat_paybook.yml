@@ -1,0 +1,43 @@
+---
+- name: instaling tomcat at all nodes
+  hosts: all
+  become: true
+  tasks:
+  - name: installing java at nodes
+    yum:
+      name: java
+      state: installed
+    when: ansible_os_family == "RedHat"
+
+  - name: instaling java at nodes
+    apt:
+      name: default-jdk
+      state: ipresent
+    when: ansible_os_family == "Debian"
+
+  - name: insatlling tomcat at all nodes
+    get_url:
+      url: https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.54/bin/apache-tomcat-9.0.54.tar.gz
+      dest: /opt
+
+  - name: extract tomcat
+    unarchive:
+      src: /opt/apache-tomcat-9.0.54.tar.gz
+      dest: /opt
+      mode: 0777
+      remote_src: yes   
+      
+
+  - name: giving file permissions
+    file:
+      path: /opt/apache-tomcat-9.0.54/bin/startup.sh
+      mode: 0777
+
+  - name: start tomcat service
+    shell: nohup ./startup.sh
+    args:
+      chdir: /opt/apache-tomcat-9.0.54/bin
+
+
+
+        

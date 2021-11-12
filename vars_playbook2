@@ -1,0 +1,12 @@
+---
+- name: creating variables
+  hosts: all
+] become: true
+  vars:
+    user: saikrishnna
+  tasks:
+  - name: crating a neew
+    user:
+      name: "{{user}}"
+    
+  

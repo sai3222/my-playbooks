@@ -1,0 +1,8 @@
+---
+# tasks file for play_roles
+- name: installing docker
+  yum:
+    name: docker
+    state: present   
+    notify: service docker start
+

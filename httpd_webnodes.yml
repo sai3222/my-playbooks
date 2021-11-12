@@ -1,0 +1,21 @@
+i---
+- name: installing httpd package
+  hosts: all
+  become: true
+  tasks:
+  - name: insatling httpd package
+    yum:
+      name: httpd
+      state: installed
+
+  - name: service httpd start
+    service:
+      name: httpd 
+      state: started
+
+  - name: copy index.html
+    copy:
+      src: /home/ansadmin/index.html
+      dest: /var/www/html
+      mode: 0666
+      remote_src: yes
