@@ -1,0 +1,16 @@
+---
+ - name: creating a play book for ansible node
+   hosts: all
+   become: true
+   tasks:
+    - name: removing old containers and images
+      shell: docker stop $(docker ps -a -q)
+
+    - name: remove images
+      shell: docker rmi -f $(docker images -q)
+
+    - name: removing containers
+      shell: docker rm $(docker ps -a -q)
+
+    - name: creating a docker container
+      shell: docker run -td --name saicontainer -p 8090:8080 saikrishna310/18images /bin/bash
